@@ -2,12 +2,15 @@ import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 
-const app=express();
+
 
 import authRoutes from "./routes/auth.route.js";
 import connectToMongoDB from "./db/connectToMongoDB.js";
 import messageRoutes from "./routes/message.route.js";
 import userRoute from "./routes/user.route.js";
+
+
+import {app , server} from "./socket/socket.js"
 
 
 dotenv.config();

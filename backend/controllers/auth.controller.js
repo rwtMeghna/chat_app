@@ -42,7 +42,7 @@ const hashedPassword=await bcrypt.hash(password , salt);
          res.status(201).json({
             _id:newUser._id,
             fullName:newUser.fullName,
-            userName:newUser.fullName,
+            userName:newUser.userName,
             profilePic:newUser.profilePic
          })
         }

@@ -40,16 +40,16 @@ const handleSubmit=async(e)=>{
 <form onSubmit={handleSubmit}>
   <div>
     <label className='label p-2'>
-      <span className='text-base label-text'>Full Name</span>
+      <span className='text-xl label-text'>Full Name</span>
     </label>
-    <input type="text" placeholder='Enter Full Name' className='w-full input input-bordered h-10' 
+    <input type="text" placeholder='Enter Full Name' className='w-full input input-bordered h-10 ' 
     value={inputs.fullName} onChange={(e)=>setInputs({...inputs , fullName:e.target.value})}/>
   </div>
 
 
   <div>
     <label className='label p-2'>
-      <span className='text-base label-text'>Username</span>
+      <span className='text-xl label-text'>Username</span>
     </label>
     <input type="text" placeholder='Enter User Name' className='w-full input input-bordered h-10' 
     value={inputs.userName} onChange={(e)=>setInputs({...inputs , userName:e.target.value})}/>
@@ -58,7 +58,7 @@ const handleSubmit=async(e)=>{
 
   <div>
     <label className='label p-2'>
-      <span className='text-base label-text'>Password</span>
+      <span className='text-xl label-text'>Password</span>
     </label>
     <input type="password" placeholder='Enter Full Name' className='w-full input input-bordered h-10'
     value={inputs.password} onChange={(e)=>setInputs({...inputs , password:e.target.value})} />
@@ -68,7 +68,7 @@ const handleSubmit=async(e)=>{
 
   <div>
     <label className='label p-2'>
-      <span className='text-base label-text'>Confirm Password</span>
+      <span className='text-xl label-text'>Confirm Password</span>
     </label>
     <input type="password" placeholder='Enter Full Name' className='w-full input input-bordered h-10' 
     value={inputs.confirmPassword} onChange={(e)=>setInputs({...inputs , confirmPassword:e.target.value})}/>
@@ -80,7 +80,7 @@ const handleSubmit=async(e)=>{
 
 
   <Link to="/login" className='text-md hover:underline hover:text-blue-600 mt-2 '>Already have an account?</Link>
-  <button className='btn btn-block btn-sm mt-2 border border-slate-700'>Signup</button>
+  <button className='btn btn-block btn-md mt-2 border border-slate-700 text-xl text-black'>Signup</button>
 </form>
 </div>
     </div>

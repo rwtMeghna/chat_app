@@ -21,7 +21,7 @@ const handleSubmit=async(e)=>{
     <div children className='flex flex-col items-center justify-center min-w-96 mx-auto'>
         <div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop:filter backdrop-blur-lg bg-opacity-0'>
          <h1 className='text-3xl font-semibold text-center text-gray-300'>Login
-            <span className='text-blue-500'>ChatApp</span>
+            <span className='text-blue-500'> ChatApp</span>
          </h1>
 
 
@@ -29,7 +29,7 @@ const handleSubmit=async(e)=>{
          <form onSubmit={handleSubmit}>
         <div>
         <label className='label p-2'>
-        <span className='text-base label-text'>Username</span>
+        <span className='text-xl label-text '>Username</span>
             </label>
             <input type='text' placeholder='Enter userName' className='w-full input input-bordered h-10'
             value={userName} onChange={(e)=>setUsername(e.target.value)} />
@@ -38,7 +38,7 @@ const handleSubmit=async(e)=>{
 
     <div >
         <label className='label'>
-            <span className='text-base label-text'>Password</span>
+            <span className='text-xl label-text'>Password</span>
             </label>
             <input type="text" className='w-full input input-bordered h-10'
              placeholder='Enter Password' value={password} onChange={(e)=>setPassword(e.target.value)} />
@@ -50,7 +50,7 @@ const handleSubmit=async(e)=>{
 </Link> 
 
      <div>
-        <button className='btn btn-block btn-sm mt-2' disabled={loading} >
+        <button className='btn btn-block btn-md mt-2 text-xl font bold text-black' disabled={loading} >
             {loading ?<span className='loading loading-spinner'></span> : "Login" }
         </button>
     </div> 
